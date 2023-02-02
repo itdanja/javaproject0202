@@ -1,0 +1,43 @@
+웹/앱개발
+	프론트엔드[화면구현] : HTML , CSS , JS , REACT	
+	백엔드[기능구현] : JAVA , DB , SPRING , JSP
+		- 풀스택[ 프론트엔드 + 백엔드 ]
+
+	JAVA 준비물
+		0. JDK : 자바 개발 도구[함] *인텔리제이에서 프로젝트 생성시 설치할 예정 
+		1. 구글 : 검색용
+		2. 에디터 IDE : java작성용 [ 1.이클립스-무료 2.인텔리제이-유료 3. VSCODE ]
+			1. 구글에 인텔리제이 검색
+			2. 상단 인텔리제이 홈페이지 클릭
+			3. 상단 다운로드 
+			[ Community Edition ] 
+			4. 설치시 다음다음다음다음 [ 옵션 있을경우 다 체크 ]	
+			5. 설치후 바탕화면 IntelliJ IDEA Community Edition 20xx.x.x 아이콘
+		3. 코드 정리 공간
+			1. velog.io : 개발자 블로그 
+			2. notion : 개발자 공유노트 / 추천 단기목표 :  5개월[책만들기]
+			3. github : https://github.com   --->   선행수업강사 아이디 : itdanja 
+
+	1. 프로젝트( 프로그램 필요한 개발 소스집합/폴더 ) 생성 
+		1. IntelliJ 첫 화면에서 new project 클릭 
+			name : 아무거나[영문]			javaproject
+			Location : 프로젝트 저장할폴더[기본값]		~\Desktop
+			language : java
+			build system : IntelliJ
+			JDK : 	download jdk
+				version : 1.8 ~ 
+				vender : amazon
+			- create 버튼 클릭 
+		2. 프로젝트 종료 
+			인테리제이 상단 메뉴 -> file -> close project 
+		3. 프로젝트 폴더 구조 
+			프로젝트명
+				.idea : 프로젝트 설정파일 [ 신경x ]
+				out : 현재 실행된 임시파일 [ 신경x ]
+				src : 소스 파일 작성하는 폴더
+					패키지[ 폴더 ] : src-> 오른쪽클릭 -> new -> package
+						클래스파일 : 해당 패키지를 오른쪽클릭 -> new -> java class
+			External Libraries : 미리 만들어진 문법들[ 자바 개발 도구 라이브러리 ]
+
+
+
