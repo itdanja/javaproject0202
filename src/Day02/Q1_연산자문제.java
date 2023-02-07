@@ -3,6 +3,17 @@ package Day02;
 public class Q1_연산자문제 { // CLASS S
     public static void main(String[] args) { // main s
 
+        // 문제1 풀이
+        System.out.println("총점 : " +  ( 30 + 70 + 80 ) );
+        System.out.println("평균 : " +  ( 30 + 70 + 80 )/3 );
+        // 문제2 풀이
+        System.out.println("사다리꼴 넓이 : "+ ( ( 30*20)*10/2 ) );
+        // 문제3
+        // 문제4 홀수찾기 : 값 % 2 나머지가 0 이면 짝수 아니면 홀수
+            // 홀수공식   값%2 == 1  , 짝수공식 값%2 == 0
+        System.out.println( 3753%2 == 1 ? "홀수" : "짝수" );
+        // 문제6 배수찾기 : 값 % 수 나머지가 0 이면 수는 그 값의 배수
+            // 7배수찾기   값%7 == 0   *값은 7배수
 
 
     } // main e
