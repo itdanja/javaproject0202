@@ -17,16 +17,25 @@ public class Ex2_연산자 { // 클래스 시작
         System.out.println( 5 == 3 );   // false    // 5는 3과 같다.
         System.out.println( 5 != 3 );   // true     // 5는 3과 다르다.
         System.out.println("---------------------------------------------");
+        // 3. 논리연산자 : 조건 2개일때 && ||
+            // 사탕 이면서[&&] 초콜릿 먹을꺼야  // 사탕 또는[or] 초콜릿 먹을꺼야
+        System.out.println( 5>3 && 5>4 );   // true and true -> true
+        System.out.println( 5>3 && 5>6 );   // true and false -> false
+        System.out.println( 5>3 || 5>4 );   // true or true -> true
+        System.out.println( 5>3 || 5>6 );   // true or false -> true
+
+        System.out.println("---------------------------------------------");
         // 4. 대입 : 특정위치에 넣는다.
         int 저장상자 = 10;      // 오른쪽에 있는 '10'를 '저장상자'에 대입하다.
         저장상자 = 5;           // * 대입시 기존 '10' 없어지고 '5' 대입 [ ! : 변수는 1개 저장 가능 ]
         저장상자 += 5;         // 오른쪽에 있는 '5'를 '저장상자' 에 더한 후에 결과를 대입 [ ! : 누적기능 ]
         // 저장상자 += 5;      // 1. 저장상자 + 5     2. 저장상자 = 결과
-
+        System.out.println("---------------------------------------------");
         // 5. 삼항연산자 : 항 3개   ( 조건 : 비교/논리/true or false ) ? ( true ) : ( false )
         System.out.println( 5>3 ? "맞아" : "틀려" );
         System.out.println( 5>3 ? 5>4 ? "5 가장크다" : "4가크다" : "3이크다" );
 
+        System.out.println("---------------------------------------------");
         // 6. 증감연산자 : ;
         int 정수상자 = 10;    // 데이터 1개를 저장할수 있는 변수[데이터 1개 할수 있는 상자]
         System.out.println( "변수안에 있는 데이터 : " + 정수상자 );
@@ -39,6 +48,11 @@ public class Ex2_연산자 { // 클래스 시작
         System.out.println( "확인 : " + 정수상자 );               // 11
         System.out.println( "선위 감소 : " + ( --정수상자 ) );      // 10 선위감소
 
+        // 7. 연결연산자 : [  + : 더하기 vs 연결 ]
+        System.out.println("---------------------------------------------");
+        System.out.println("JAVA"+8);           // JAVA8 문자
+        System.out.println("JAVA"+8+8);         // JAVA88
+        System.out.println("JAVA"+ ( 8+8 ) );   // JAVA16
 
     } // main e
 } // 클래스 끝
