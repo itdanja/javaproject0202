@@ -1,9 +1,35 @@
 package Day04;
 
+
+import java.util.Scanner;
+
 public class Q1_제어문 {
     public static void main(String[] args) {
 
+        // 1. 입력객체
+        Scanner scanner = new Scanner(System.in);
 
+        // ---------------- 1. --------------//
+        // 1. 입력하기전 무엇 입력해야 되는지 안내문 출력
+        System.out.print(" 문제1 데이터 : ");
+        // 2. 입력받은 데이터를 int형으로 가져와서 int 변수에 저장
+        int 문제1 = scanner.nextInt();
+        // 3. 만액에 입력받은 데이터가 나누기 2를 했을때 나머지가 1이면
+        if( 문제1 % 2 == 1 ){ // 홀수
+            System.out.println("홀수입니다.");
+        }else{ // 짝수
+            System.out.println("짝수입니다.");
+        }
+        // --------------- 2. --------------- //
+        System.out.print(" 문제2 데이터 : ");
+        int 문제2 = scanner.nextInt();
+        if( 문제2 % 7 == 0 ){
+            // 만약에 입력받은 값이 나누기 7를 했을때 나머지가 0 이면
+            System.out.println("- 7배수 입니다.");
+        }else{
+            System.out.println("- 7배수 아닙니다.");
+        }
+        // ---------------- 3. --------------- //
     }
 }
 
