@@ -2,8 +2,36 @@ package Day03;
 
 import java.util.Scanner;
 
+// https://github.com/itdanja/javaproject0202
+
 public class Q1_회원가입 { // class s
     public static void main(String[] args) { // main s
+
+        // 1. 입력 객체 [ Sc + 자동완성 ]
+        Scanner scanner = new Scanner( System.in );
+        // 2. 입력받은값을 String으로 가져와서 'id' 변수에 저장
+        System.out.print("아이디 : ");     String id = scanner.next();
+        System.out.print("비밀번호 : ");   short password = scanner.nextShort();
+        scanner.nextLine();
+        System.out.print("자기소개 : ");   String comment = scanner.nextLine();
+        System.out.print("성별 :");       boolean sex = scanner.nextBoolean();
+        System.out.print("선호번호 : ");   byte bno = scanner.nextByte();
+        System.out.print("금액 : ");      int money = scanner.nextInt();
+        System.out.print("키 : ");        float height = scanner.nextFloat();
+        System.out.print("몸무게 : ");     double weight = scanner.nextDouble();
+
+        // 3. 출력
+        System.out.println("--------- 회원가입 정보 ---------");
+        System.out.println(" - 아이디 : " + id );
+        System.out.println(" - 비밀번호 : " + password );
+        System.out.println(" - 자기소개 : " + comment );
+        System.out.println(" - 성별 : " + sex );
+        System.out.println(" - 선호번호 : " + bno );
+        System.out.println(" - 금액 : " + money );
+        System.out.println(" - 키 : " + height );
+        System.out.println(" - 몸무게 : " + weight );
+        System.out.println("*회원가입 해주셔서 감사합니다.");
+        System.out.println("--------------------------------");
 
     } // main e
 }  // class e
