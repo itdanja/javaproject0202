@@ -5,13 +5,31 @@ import java.util.Scanner;
 public class Q2_방문록 {
     public static void main(String[] args) {
 
-        // 힌트
+        // 1. 입력객체
         Scanner scanner = new Scanner(System.in);
-        String output = "";
-        System.out.println("입력 : "); output += scanner.next();
-        System.out.println("출력 : " + output );
-        System.out.println("입력2 : "); output += scanner.next();
-        System.out.println("출력2 : " + output );
+        // 2. 입력받은 데이터를 저장할 변수
+        String output = "========== 방문록 ==========\n번호\t작성자\t방문록\n";
+        String footer = "==========================\n";
+        // *
+        System.out.print(" [1] 작성자 : ");    output += 1 +"\t"+scanner.next()+"\t";
+        System.out.print(" [1] 방문록 : ");    output += scanner.next() + "\n";
+        System.out.print( output + footer ); // 3. 출력
+        // *
+        System.out.print(" [2] 작성자 : ");    output += 2 +"\t"+scanner.next()+"\t";
+        System.out.print(" [2] 방문록 : ");    output += scanner.next() +"\n";
+        System.out.print( output + footer );
+        //*
+        System.out.print(" [3] 작성자 : ");    output += 3 +"\t"+scanner.next()+"\t";
+        System.out.print(" [3] 방문록 : ");    output += scanner.next() + "\n";
+        System.out.print( output + footer);
+        //*
+        System.out.print(" [4] 작성자 : ");    output += 4 +"\t"+scanner.next()+"\t";
+        System.out.print(" [4] 방문록 : ");    output += scanner.next() + "\n";
+        System.out.print( output + footer );
+        //*
+        System.out.print(" [5] 작성자 : ");    output += 5 +"\t"+scanner.next()+"\t";
+        System.out.print(" [5] 방문록 : ");    output += scanner.next() +"\n";
+        System.out.print( output + footer  );
 
     }
 }
