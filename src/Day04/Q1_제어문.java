@@ -30,6 +30,28 @@ public class Q1_제어문 {
             System.out.println("- 7배수 아닙니다.");
         }
         // ---------------- 3. --------------- //
+        // 1. 3개의 점수를 입력받는다.
+        System.out.print("국어 : ");   int 국어 = scanner.nextInt();
+        System.out.print("영어 : ");   int 영어 = scanner.nextInt();
+        System.out.print("수학 : ");   int 수학 = scanner.nextInt();
+        // 2. 입력받은 데이터를 이용한 연산 [ 평균 구하기 ]
+        int 평균 = (국어+영어+수학)/3;
+        // 3. 만약에 평균이 80점 이상이면
+        if( 평균 >= 80 ){
+            // * 국어점수가 90점 이상이면
+            if( 국어>=90 ){      System.out.println("-합격 국어우수");     }
+            // * 영어점수가 90점 이상이면
+            if( 영어>=90 ) {     System.out.println("-합격 영어우수");     }
+            // * 수학점수가 90점 이상이면
+            if( 수학>=90 ) {     System.out.println("-합격 수학우수");      }
+
+        }else if( 평균 >= 70 ){ // 아니고 평균이 70점 이상이면
+            System.out.println("-합격");
+        }else{ // 그외
+            System.out.println("-불합격");
+        }
+
+
     }
 }
 
