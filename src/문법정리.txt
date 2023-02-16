@@ -1,0 +1,78 @@
+자바
+1. 출력
+	1. System.out.print(" "); 				: 출력
+	2. System.out.println(" "); 				: 출력후 줄바꿈
+	3. 제어문자 [ 이스케이프문자 ]
+		1. \n	: 줄바꿈
+		2. \t	: 들여쓰기
+		3. \\	: \ 출력
+		4. \"	: "출력 
+2. 입력
+	1. Scanner scanner = new System(System.in);		: 입력객체 
+	2. 
+		String 문자열 	= scanner.next();             : 입력받은 문자열[String] 가져오기 ( 띄어쓰기 X )
+                String 문자열 	= scanner.nextLine();         : 입력받은 문자열[String] 가져오기 ( 띄어쓰기 O )
+                boolean 논리	= scanner.nextBoolean();      : 입력받은 논리형[boolean] 가져오기
+                char 문자 	= scanner.next().charAt(0);   : 입력받은 문자형[char] 가져오기
+                byte 정수 	= scanner.nextByte();         : 입력받은 정수형[byte] 가져오기
+                short 정수 	= scanner.nextShort();
+                int 정수 		= scanner.nextInt();
+                long 정수 	= scanner.nextLong();
+                float 실수 	= scanner.nextFloat()         : 입력받은 실수형[float] 가져오기
+                double 실수 	= scanner.nextDouble()
+3. 연산자 
+	1. 산술연산자	+더하기	-빼기	*곱하기	/나누기	%나머지
+	2. 비교연산자	>=이상	<=이하	>초과	<미만	==같다	!=같지않다.	
+	3. 논리연산자	&&이면서	||이거나	!부정
+	4. 대입연산자	= 오른쪽데이터를 왼쪽에 대입	+= 오른쪽데이터를 왼쪽에 더한후에 대입 *= -= /= %=
+	5. 증감연산자	++증가	--감소
+	6. 삼항연산자	조건 ? 참 : 거짓 
+	7. 연결연산자 	+연결연산자
+
+4. 변수
+	1. 타입
+		논리형 	: boolean	[ true or false ]
+		문자형	: char		[ ' ' 문자 1개 ]	
+			* 문자열 : String [ " " 문자열 ]
+		정수형 : byte		[ +-120 정도 ]
+			short		[ +- 3만정도 ]
+			*int		[ +-21억정도 ]
+			long		[ 이상 ]
+		실수형 : float		[ 소수점 8자리 ]
+			*double		[ 소수점	17자리 ]
+	2. 변수명
+		관례적으로 영문 , 숫자시작x , 띄어쓰기x , 카멜표기법 memberCar
+	3. 대입연산자
+	4. 데이터
+		! : 앞에서 선언된 타입의 허용범위내 데이터
+
+5. 제어문 = 경우의수 판단 / 논리
+
+	1. 형태
+		1. if( 조건 ) true실행문;
+		2. if( 조건 ) {  true실행문; true실행문; }
+		3. if( 조건 ) { 
+			true실행문;
+		}else{
+			false실행문;
+		}
+		4. 다수조건이면서 결과가 하나일때 
+			if( 조건1 ) { 조건1true실행문; }
+			else if( 조건2 ){ 조건2true실행문; }
+			else if( 조건3 ) { 조건3true실행문; }
+			else if( 조건4 ){ 조건4true실행문; }
+			else
+		4* 다수조건이면서 결과가 여러개
+			if( 조건1 ) { 조건1true실행문; }
+			if( 조건2 ){ 조건2true실행문; }
+			if( 조건3 ) { 조건3true실행문; }
+			if( 조건4 ){ 조건4true실행문; }
+		5. 중첩
+			if( 조건1 ) {
+				if( 조건 ){ }
+				else { }
+			}else{
+				if( 조건 ) { } 
+				else { } 
+			}	
+
