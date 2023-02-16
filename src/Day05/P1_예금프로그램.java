@@ -3,7 +3,7 @@
         주제 : 예금프로그램
         사용되는문법 : 출력,입력,변수,연산,제어,반복
         조건
-            1. 기능 메뉴 : 예금 , 출금 , 잔고확인 , 5.이체
+            1. 기능 메뉴 : 1.예금 , 2.출금 , 3.잔고확인 4.종료 5.이체 6.비밀번호변경
             2. 통장 :
                     본인 1개[ 계좌번호 : 20230216 , 비밀번호 : 1234 , 초기잔금 : 0 ]
                     친구 1개[ 친구계좌번호 : 20230217 , 초기잔금 : 0 ]
@@ -22,7 +22,7 @@ public class P1_예금프로그램 { // class start // 자바 코드는 무조�
         // * 통장 데이터 변수 [ while 밖에 만드는 이유 : 통장 관련 변수들은 선언 1번 ]
         // -- 본인 통장
         int account = 20230216; // -- 계좌번호 변수
-        int password = 1234;    // -- 비밀번호 변수
+        int password = 1234;    // -- 초기 비밀번호 변수
         int money  = 0 ;        // -- 통장 잔금 변수
         // -- 친구 통장
         int faccount = 20230217;
@@ -99,11 +99,39 @@ public class P1_예금프로그램 { // class start // 자바 코드는 무조�
             else if( menuChoice == 4 ){ // 4. 입력한 데이터 '4' 이면
                 System.out.println("--------------- 종료 -----------------");
                 break; // -- whlie문 종료
-            }
+            } // if end
             // ----------------------------------5. 이체 -----------------------------------------
             else if( menuChoice == 5 ){
-
-            }
+                System.out.println("--------------- 이체 -----------------");
+                System.out.print(" 계좌번호 입력 : "); int 계좌번호 = scanner.nextInt();
+                System.out.print(" 비밀번호 입력 : "); int 비밀번호 = scanner.nextInt();
+                // 1. 검증
+                if( account == 계좌번호 ){
+                    // 2. 검증
+                    if( password == 비밀번호 ){
+                        System.out.print(" 이체할 계좌번호 : ");   int 이체번호 = scanner.nextInt();
+                        // 3. 검증
+                        if( faccount == 이체번호 ){
+                            System.out.print(" 이체할 금액 : ");   int 이체금액 = scanner.nextInt();
+                            // 4.검증
+                            if( money < 이체금액 ){
+                                System.out.println("[경고] 이체할 금액이 부족합니다.");
+                            }else{
+                                money -= 이체금액;  // 내 통장에서 이체금액 빼기
+                                fmoney += 이체금액;
+                                System.out.println(" 내 계좌 잔금 : " + money +" 원");
+                                System.out.println(" 친구 계좌 잔금 : " + fmoney+" 원" );
+                            } // if end
+                        }else{
+                            System.out.println("[경고] 이체할 계좌번호의 정보가 없습니다.");
+                        } // if end
+                    }else{
+                        System.out.println("[경고] 비밀번호가 일치하지 않습니다.");
+                    } // if end
+                }else{
+                    System.out.println("[경고] 계좌번호가 일치하지 않습니다.");
+                }// if end
+            } // if end
         } // while end
     } // main end
     // -------------------------------------------------------
